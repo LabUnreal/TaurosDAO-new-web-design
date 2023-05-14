@@ -5,6 +5,7 @@ export default function WelcomeSection() {
 
   return (
     <Flex
+      id="top"
       position="relative"
       h="100vh"
       direction={{ base: "column", md: "row" }}
