@@ -16,7 +16,7 @@ export default function Header() {
       zIndex={1}
     >
       <Box>
-        <Image src="/images/TaurosDAO-logo.png" width="300px" height="auto" alt="TaurosDAO Logo" />
+        <Image src="/images/logos/TaurosDAO-logo.png" width="300px" height="auto" alt="TaurosDAO Logo" />
       </Box>
       <Spacer />
       <Box fontSize="20" pr="6">

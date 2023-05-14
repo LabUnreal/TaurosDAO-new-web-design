@@ -11,7 +11,7 @@ export default function WelcomeSection() {
       direction={{ base: "column", md: "row" }}
       justify={{ base: "center", md: "flex-start" }}
       align="center"
-      bgImage="url('/images/Welcome.jpeg')"
+      bgImage="url('/images/sections/welcome/Welcome.jpeg')"
       bgPos="center"
       bgSize="cover"
       bgRepeat="no-repeat"

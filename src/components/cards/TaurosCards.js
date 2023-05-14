@@ -43,7 +43,7 @@ const buttonVariants = {
     <Box
         py="40"
         position="relative"
-        bgImage="url('/images/13.png')"
+        bgImage="url('/images/sections/taurosCards/13.png')"
         bgPos="center"
         bgSize="cover"
         bgRepeat="no-repeat"

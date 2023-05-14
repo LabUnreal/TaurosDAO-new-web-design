@@ -17,7 +17,7 @@ export default function ArtCollectiveSection() {
         >
             <AspectRatio w="100%" maxW="xl" ratio={1} my={{ base: '0', md: '0', lg: '20'}}>
                 <Image
-                    src="/images/ArtCollective.webp"
+                    src="/images/sections/artCollective/ArtCollective.webp"
                     alt="Art Collective"
                     borderRadius="md"
                     objectFit="cover"
