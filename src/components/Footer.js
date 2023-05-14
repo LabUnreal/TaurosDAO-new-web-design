@@ -28,7 +28,7 @@ export default function Footer() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={1700}
                 _hover={{ color: "teal" }}
                 style={{ cursor: "pointer" }}
                 >
