@@ -9,7 +9,7 @@ const theme = extendTheme({
     fontSizes: {
       '7xl': '4.5rem',
       '8xl': '5rem',
-      '9xl': '6rem',
+      '9xl': '5.5rem',
     },
   });
 
