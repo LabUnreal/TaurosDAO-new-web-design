@@ -1,5 +1,5 @@
 import { Box, Grid, Heading, Text, Image } from "@chakra-ui/react";
-import Paragraph from "./textStyles/Paragraph";
+import Paragraph from "../textStyles/Paragraph";
 
 const services = [
     {

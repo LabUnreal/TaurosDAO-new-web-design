@@ -1,5 +1,5 @@
 import { Box, Flex, Grid, Heading, Text, UnorderedList, ListItem, Image, useColorModeValue, AspectRatio } from "@chakra-ui/react";
-import Paragraph from "./textStyles/Paragraph";
+import Paragraph from "../textStyles/Paragraph";
 
 export default function ArtCollectiveSection() {
     const bg = useColorModeValue("gray.50", "gray.800");
