@@ -1,4 +1,5 @@
-import { Box, Flex, Link, Button, Image } from "@chakra-ui/react";
+import { Box, Flex, Link, Button, Image, Spacer, IconButton } from "@chakra-ui/react";
+import { FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -8,7 +9,8 @@ export default function Header() {
       top="0"
       bg="black"
       color="white"
-      p="4"
+      px="28"
+      py="4"
       align="center"
       justify="space-between"
       zIndex={1}
@@ -16,14 +18,17 @@ export default function Header() {
       <Box>
         <Image src="/images/TaurosDAO-logo.png" width="300px" height="auto" alt="TaurosDAO Logo" />
       </Box>
-      <Box>
+      <Spacer />
+      <Box fontSize="20" pr="6">
         <Link p="2" href="/members">Members</Link>
-        <Link p="2" href="/services">Services</Link>
-        <Link p="2" href="/governance">Governance</Link>
         <Link p="2" href="/galleries">Galleries</Link>
-        <Link p="2" href="/blog">Blog</Link>
       </Box>
-      <Button colorScheme="teal">Connect</Button>
+      <Box>
+        <IconButton as="a" href="https://twitter.com/taurosdao" target="blank" aria-label="Twitter" icon={<FaTwitter />} mx="1" variant="ghost" isRound={true} fontSize="26px" />
+        <IconButton as="a" href="https://instagram.com/taurosdao" target="blank" aria-label="Instagram" icon={<FaInstagram />} mx="1" variant="ghost" isRound={true} fontSize="26px" />
+        <IconButton as="a" href="https://discord.com/invite/taurosdao" target="blank" aria-label="Discord" icon={<FaDiscord />} mx="1" variant="ghost" isRound={true} fontSize="26px" />
+      </Box>
+      <Button background="linear-gradient(45deg, #FFD700, #DAA520)" color="black" _hover={{background: "linear-gradient(45deg, #DAA520, #FFD700)"}} ml="4">Connect</Button>
     </Flex>
   );
 }

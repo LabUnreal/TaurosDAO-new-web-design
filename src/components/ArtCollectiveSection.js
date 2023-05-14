@@ -11,7 +11,7 @@ export default function ArtCollectiveSection() {
             justify="space-between"
             align="start"
             px={{ base: '8', md: '16', lg: '32' }}
-            py={{ base: '8', md: '0', lg: '0'}}
+            py={{ base: '8', md: '0', lg: '32'}}
             bg={bg}
             color={color}
         >
