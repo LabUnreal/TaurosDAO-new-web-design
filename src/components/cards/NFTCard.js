@@ -1,3 +1,4 @@
+// src/components/cards/NFTCard.js
 import { Box } from '@chakra-ui/react'
 
 export default function ProductCard({ product, setModalData }) {

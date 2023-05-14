@@ -1,3 +1,4 @@
+// src/components/cards/NFTModal.js
 import { Box, Modal, ModalOverlay, ModalContent,Spacer, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Grid, GridItem } from "@chakra-ui/react";
 // import MBE from "../mint/MintButtonEstatesv2";
 // import MBT from "../mint/MintButtonTaurosV2";

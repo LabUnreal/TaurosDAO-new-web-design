@@ -1,3 +1,4 @@
+// src/compoents/cards/TaurosCards.js
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { cardVariant, parentVariant } from './motion'
@@ -40,32 +41,41 @@ const buttonVariants = {
 
   return (
     <Box
-      py="40"
-      position="relative"
-      bgImage="url('/images/AbstractFuturisticDark.jpg')"
-      bgPos="center"
-      bgSize="cover"
-      bgRepeat="no-repeat"
+        py="40"
+        position="relative"
+        bgImage="url('/images/13.png')"
+        bgPos="center"
+        bgSize="cover"
+        bgRepeat="no-repeat"
     >
-        <Box pt={20} pb={20} align="center" bgGradient="linear(to-r, whiteAlpha.300 50%, transparent)">
-          <MotionSimpleGrid
-            mt="4"
-            minChildWidth="250px"
-            minH="full"
-            variants={parentVariant}
-            animate={inView ? "animate" : "initial"}
-            ref={ref}
-          >
-            {cardsData.map((product, i) => (
-              <MotionBox variants={cardVariant} key={i}>
-                <NFTCard product={product} setModalData={setModalData} />
-              </MotionBox>
-            ))}
+        {/* Overlay */}
+        <Box 
+            // bgGradient="linear(to-r, whiteAlpha.500 50%, transparent)"
+            position="absolute"
+            top="0"
+            bottom="0"
+            left="0"
+            right="0"
+        />
+        <Box py={20} px={40} align="center">
+            <MotionSimpleGrid
+                mt="4"
+                minChildWidth="250px"
+                minH="full"
+                variants={parentVariant}
+                animate={inView ? "animate" : "initial"}
+                ref={ref}
+            >
+                {cardsData.map((product, i) => (
+                  <MotionBox variants={cardVariant} key={i}>
+                    <NFTCard product={product} setModalData={setModalData} />
+                  </MotionBox>
+                ))}
             </MotionSimpleGrid>
             <NFTModal
-              isOpen={modalData ? true : false}
-              onClose={() => setModalData(null)}
-              modalData={modalData}
+                isOpen={modalData ? true : false}
+                onClose={() => setModalData(null)}
+                modalData={modalData}
             />
         </Box>
     </Box>

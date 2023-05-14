@@ -1,3 +1,4 @@
+// src/components/cards/cardsData.js
 const cardsData = [
     {
         key: 1,
