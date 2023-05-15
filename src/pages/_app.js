@@ -18,7 +18,7 @@ const { provider, webSocketProvider, chains } = configureChains(
   [
     // alchemyProvider({ apiKey: 'hu9KmpMxud_8q6Tlskrt42zOpiGy-9xN' }),
     publicProvider(),
-    infuraProvider({ apiKey: '5c9cb0b35a2742659dec6fc7680c16c4' })
+    infuraProvider({ projectId: '4cb849430aaa4b82bb8360011eb397e9' })
     
   ],
 )
