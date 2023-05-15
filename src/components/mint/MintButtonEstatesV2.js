@@ -1,3 +1,4 @@
+// src/components/mint/MintButtonEstatesV2.js
 import {useToast, Button, NumberInputStepper, Box, Spacer, NumberIncrementStepper, NumberDecrementStepper, NumberInputField, Text, FormControl, FormLabel, NumberInput} from "@chakra-ui/react"
 import { useEffect, useState, } from "react";
 import CustomContainer from "../CustomContainer"
@@ -92,16 +93,3 @@ export default function MBE() {
     </CustomContainer>
   )
 }
-
-{/* Opensea button --> move to bottom of the page */ }
-{/* <Container>
-            <span>
-                <Button
-                  onClick={(e) => {
-                    window.open(CONFIG.MARKETPLACE_LINK, "_blank");
-                  }}
-                >
-                  {CONFIG.MARKETPLACE}
-                </Button>
-            </span>          
-          </Container>               */}

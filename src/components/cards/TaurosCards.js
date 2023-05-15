@@ -7,7 +7,7 @@ import NFTCard from './NFTCard'
 import NFTModal from './NFTModal'
 import { useInView } from 'react-intersection-observer'
 import { Box, SimpleGrid, useDisclosure, IconButton } from '@chakra-ui/react'
-// import styles from '../styles/MintButton.module.css'
+// import styles from '@styles/MintButton.module.css'
 // import TaurosDAOIcon from '@components/TaurosDAOIcon'
 
 const MotionSimpleGrid = motion(SimpleGrid)
