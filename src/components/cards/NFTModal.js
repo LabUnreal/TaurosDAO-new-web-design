@@ -1,7 +1,5 @@
 // src/components/cards/NFTModal.js
 import { Box, Modal, ModalOverlay, ModalContent,Spacer, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Grid, GridItem } from "@chakra-ui/react";
-import MBE from "../mint/MintButtonEstatesV2";
-import MBT from "../mint/MintButtonTaurosV2";
 export default function ProductModal({ isOpen, onClose, modalData }) {
   const { title, free, presalePrice, salePrice, imageUrl, imageAlt, description, unclaimed, glb } = modalData || {};
 
@@ -38,7 +36,8 @@ export default function ProductModal({ isOpen, onClose, modalData }) {
           <Spacer />
 
             <Box pb="10">
-            {title == "MERCA CITY ESTATE" ? <MBE /> : <MBT />}
+            Merca City Estate
+            {/* {title == "MERCA CITY ESTATE" ? <MBE /> : <MBT />} */}
             </Box>
         </ModalFooter>
       </ModalContent>
